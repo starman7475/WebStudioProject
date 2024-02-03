@@ -1,0 +1,16 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_1612">
+			<rect id="facebook 1" width="16.000000" height="16.000000" transform="translate(12.000000 12.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Ellipse" width="40.000000" height="40.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="Ellipse" d="M40 20C40 25.5228 37.7614 30.5228 34.1422 34.1421C30.5228 37.7615 25.5228 40 20 40C14.4772 40 9.47717 37.7615 5.85785 34.1421C2.23859 30.5228 0 25.5228 0 20C0 14.4772 2.23859 9.47717 5.85785 5.85791C9.47717 2.23853 14.4772 0 20 0C25.5228 0 30.5228 2.23853 34.1422 5.85791C37.7614 9.47717 40 14.4772 40 20Z" fill="#4D5AE5" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<rect id="facebook 1" width="16.000000" height="16.000000" transform="translate(12.000000 12.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_1612)">
+		<path id="Vector" d="M22.6646 14.6566L24.1253 14.6566L24.1253 12.1127C23.8733 12.078 23.0067 12 21.9973 12C19.8913 12 18.4486 13.3247 18.4486 15.7593L18.4486 18L16.1246 18L16.1246 20.844L18.4486 20.844L18.4486 28L21.298 28L21.298 20.8447L23.528 20.8447L23.882 18.0006L21.2973 18.0006L21.2973 16.0414C21.298 15.2194 21.5193 14.6566 22.6646 14.6566Z" fill="#F4F4FD" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

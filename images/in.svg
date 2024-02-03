@@ -1,0 +1,18 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_1645">
+			<rect id="linkedin 1" width="16.000000" height="16.000000" transform="translate(12.000000 12.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Ellipse" width="40.000000" height="40.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="Ellipse" d="M40 20C40 25.5228 37.7615 30.5228 34.1421 34.1421C30.5228 37.7615 25.5228 40 20 40C14.4772 40 9.47717 37.7615 5.85791 34.1421C2.23853 30.5228 0 25.5228 0 20C0 14.4772 2.23853 9.47717 5.85791 5.85791C9.47717 2.23853 14.4772 0 20 0C25.5228 0 30.5228 2.23853 34.1421 5.85791C37.7615 9.47717 40 14.4772 40 20Z" fill="#4D5AE5" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<rect id="linkedin 1" width="16.000000" height="16.000000" transform="translate(12.000000 12.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_1645)">
+		<path id="Vector" d="M27.9961 28L27.9961 27.9993L28.0001 27.9993L28.0001 22.1313C28.0001 19.2606 27.3821 17.0493 24.0261 17.0493C22.4127 17.0493 21.3301 17.9347 20.8881 18.7739L20.8414 18.7739L20.8414 17.3173L17.6594 17.3173L17.6594 27.9993L20.9728 27.9993L20.9728 22.71C20.9728 21.3173 21.2368 19.9707 22.9614 19.9707C24.6608 19.9707 24.686 21.5599 24.686 22.7993L24.686 28L27.9961 28Z" fill="#F4F4FD" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M12.264 17.3179L15.5814 17.3179L15.5814 27.9999L12.264 27.9999L12.264 17.3179Z" fill="#F4F4FD" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M13.9214 12C12.8607 12 12 12.8607 12 13.9214C12 14.9821 12.8607 15.8607 13.9214 15.8607C14.9821 15.8607 15.8427 14.9821 15.8427 13.9214C15.842 12.8607 14.9813 12 13.9214 12L13.9214 12Z" fill="#F4F4FD" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
