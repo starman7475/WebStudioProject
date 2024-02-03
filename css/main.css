@@ -1,0 +1,136 @@
+:root {
+  --color-h: #2e2f42;
+  --color-p: #434455;
+  --color-a-logo: #4d5ae5;
+  --hover: blue;
+  --color-white: #fff;
+  --color-team: #f4f4fd;
+}
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+.header-logo {
+  color: var(--color-h);
+  text-align: left;
+}
+.header-logo:hover {
+  color: var(--hover);
+}
+.web {
+  color: var(--color-a-logo);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.studio {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.nav-site a {
+  color: var(--color-h);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.nav-site a:hover,
+.nav-site a:focus {
+  color: var(--hover);
+}
+.nav-links a {
+  color: var(--color-p);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--hover);
+}
+
+body h2 {
+  color: var(--color-h);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2%;
+  text-align: center;
+}
+body h3 {
+  color: var(--color-h);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+body p {
+  color: var(--color-p);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+.section-hero {
+  background-color: var(--color-h);
+}
+.hero-name {
+  color: var(--color-white);
+  font-family: Roboto;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2%;
+  text-align: center;
+}
+.hero-link {
+  color: var(--color-white);
+  background-color: var(--color-a-logo);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.our-team {
+  background-color: var(--color-team);
+}
+.footer {
+  background-color: var(--color-h);
+}
+.footer-logo {
+  color: var(--color-white);
+  text-align: left;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.footer-web {
+  color: var(--color-a-logo);
+}
+.footer-media {
+  color: var(--color-white);
+}
+.footer-description {
+  color: var(--color-team);
+}
+
+.button-primary {
+  color: var(--color-a-logo);
+  background-color: var(--color-white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.button-primary:hover,
+.button-primary:focus {
+  color: var(--color-white);
+  background-color: var(--color-a-logo);
+}
