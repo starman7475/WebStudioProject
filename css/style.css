@@ -4,6 +4,7 @@ footer p: #F4F4FD
 white: #ffffff
 color hover: blue
 */
+
 :root {
   --main-color: #2e2f42;
   --p: #434455;
@@ -13,12 +14,11 @@ color hover: blue
   --bgc-btn: #4d5ae5;
 }
 
-ul {
+* {
+  text-decoration-line: none;
   list-style: none;
 }
-a {
-  text-decoration-line: none;
-}
+
 .nav-site a {
   color: var(--main-color);
 }
@@ -73,12 +73,46 @@ a {
 .footer p {
   color: var(--footer-p);
 }
-.Web {
-  color: #4d5ae5;
+.logo {
+  color: var(--main-color);
+  font-size: ;
+}
+.alogo :hover,
+.alogo :focus {
+  color: var(--bgc-btn);
+}
+.web {
+  color: var(--bgc-btn);
 }
 .Studio {
   color: #f4f4fd;
+  font-family: Raleway;
 }
 .Studio-header {
   color: #2e2f42;
+}
+.section-button button {
+  background-color: #f4f4fd;
+  color: #4d5ae5;
+}
+
+.section-button button:hover,
+.section-button button:focus {
+  color: #fff;
+  background-color: #4d5ae5;
+}
+.products {
+  display: none;
+}
+.section-products h3 {
+  color: var(--main-color);
+}
+.section-products p {
+  color: var(--p);
+}
+.footer p {
+  color: var(--footer-p);
+}
+.Studio-footer {
+  color: var(--footer-p);
 }
