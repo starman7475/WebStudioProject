@@ -4,66 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <a href="/">
-        <h2 class="Web">WEB</h2>
-        <h2 class="Studio-header">STUDIO</h2>
-      </a>
-      <nav>
-        <ul class="nav-site">
-          <li>
-            <a href="./index.html">Studio</a>
+    <header class="header">
+      <div class="container nav-position">
+        <a href="/">
+          <h2 class="header-logo">
+            <span class="web">WEB</span> <span class="studio">STUDIO</span>
+          </h2>
+        </a>
+        <nav class="nav">
+          <ul class="nav-site">
+            <li class="item">
+              <a href="./index.html">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./potfolio.html">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav-links">
+          <li class="item">
+            <a href="">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="">Portfolio</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
+          <li class="item">
+            <a href="">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="info">
-        <li>
-          <a href="" class="info-mail">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="" class="info-number">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <h1>Наши работы</h1>
-      <section class="section">
-        <h2>Фильтры</h2>
-        <ul class="section-button">
-          <li><button type="button">All</button></li>
-          <li><button type="button">Web Site</button></li>
-          <li><button type="button">App</button></li>
-          <li><button type="button">Design</button></li>
-          <li><button type="button">Marketing</button></li>
+      <h1 class="our-works">Наши работы</h1>
+      <section class="container">
+        <h2 class="filters">Фильтры</h2>
+        <ul class="works-btn">
+          <li><button type="button" class="button-primary">All</button></li>
+          <li>
+            <button type="button" class="button-primary">Web Site</button>
+          </li>
+          <li><button type="button" class="button-primary">App</button></li>
+          <li><button type="button" class="button-primary">Design</button></li>
+          <li>
+            <button type="button" class="button-primary marketing">
+              Marketing
+            </button>
+          </li>
         </ul>
       </section>
-      <section class="section-products">
-        <h2 class="products">Товар</h2>
-        <ul>
-          <li>
+      <section class="container">
+        <h2 class="works">Товар</h2>
+        <ul class="flex-elements">
+          <li class="card">
             <a href="">
               <img src="./images/Banking.png" alt="банковское приложение" />
               <h3>Banking App Interface Concept</h3>
               <p>App</p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img src="./images/cashless.png" alt="безнал оплата" />
               <h3>Cashless Payment</h3>
               <p>Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="card third-card">
             <a href="">
               <img
                 src="./images/meditation.png"
@@ -73,42 +93,42 @@
               <p>App</p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img src="./images/taxi.png" alt="такси" />
               <h3>Taxi Service</h3>
               <p>Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img src="./images/screen.png" alt="изображение телефона" />
               <h3>Screen Illustrations</h3>
               <p>Design</p>
             </a>
           </li>
-          <li>
+          <li class="card third-card">
             <a href="">
               <img src="./images/online.png" alt="онлайн курсы" />
               <h3>Online Courses</h3>
               <p>Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img src="./images/instagram.png" alt="инстаграмм сторис" />
               <h3>Instagram Stories Concept</h3>
               <p>Design</p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img src="./images/organic.png" alt="еда" />
               <h3>Organic Food</h3>
               <p>Web Site</p>
             </a>
           </li>
-          <li>
+          <li class="card third-card">
             <a href="">
               <img src="./images/fresh.png" alt="коффе" />
               <h3>Fresh Coffee</h3>
@@ -119,14 +139,37 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="/">
-        <h2 class="Web">WEB</h2>
-        <h2 class="Studio-footer">STUDIO</h2>
-      </a>
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="footer-position">
+        <a href="/">
+          <h2 class="footer-logo">
+            <span class="footer-web">WEB</span> STUDIO
+          </h2>
+        </a>
+        <p class="footer-media">Social media</p>
+      </div>
+      <div class="position-footer">
+        <p class="footer-description">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+
+        <ul class="footer-img">
+          <li class="item">
+            <a href=""
+              ><img src="./images/instagram.svg" alt=" инстаграмм"
+            /></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="./images/in.svg" alt="ин" /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
