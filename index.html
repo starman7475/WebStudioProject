@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,63 +19,65 @@
   </head>
   <body>
     <header class="header">
-      <a href="/">
-        <h2 class="header-logo">
-          <span class="web">WEB</span> <span class="studio">STUDIO</span>
-        </h2>
-      </a>
-      <nav class="nav">
-        <ul class="nav-site">
-          <li>
-            <a href="">Studio</a>
+      <div class="container nav-position">
+        <a href="/">
+          <h2 class="header-logo">
+            <span class="web">WEB</span> <span class="studio">STUDIO</span>
+          </h2>
+        </a>
+        <nav class="nav">
+          <ul class="nav-site">
+            <li class="item">
+              <a href="./index.html">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./potfolio.html">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav-links">
+          <li class="item">
+            <a href="">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="./potfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
+          <li class="item">
+            <a href="">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="nav-links">
-        <li>
-          <a href="">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="section-hero">
         <h1 class="hero-name">Effective Solutions for Your Business</h1>
         <a href="" class="hero-link">Order Service</a>
       </section>
-      <section>
-        <h2>Description</h2>
-        <ul>
-          <li>
+      <section class="container">
+        <h2 class="description">Description</h2>
+        <ul class="section-description">
+          <li class="item">
             <h3>Strategy</h3>
             <p>
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3>Punctuality</h3>
             <p>
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3>Diligence</h3>
             <p>
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="item">
             <h3>Technologies</h3>
             <p>
               Design practice focused on digital experiences. We bring forth a
@@ -80,144 +86,175 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
-          <li>
+      <section class="container doing">
+        <h2 class="doing-img">What are we doing</h2>
+        <ul class="doing-position">
+          <li class="item">
             <img src="./images/img1.png" alt="Computer" />
           </li>
-          <li>
+          <li class="item">
             <img src="./images/Rectangle71.png" alt="Display" />
           </li>
-          <li>
+          <li class="item">
             <img src="./images/phone.png" alt="Phone" />
           </li>
         </ul>
       </section>
-      <section class="our-team">
-        <h2>Our Team</h2>
-        <ul>
-          <li>
-            <img src="./images/Mark.png" alt="Mark" />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
-            <ul>
-              <li>
-                <a href=""
-                  ><img src="./images/instagram.svg" alt=" инстаграмм"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/in.svg" alt="ин" /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img src="./images/Tom.png" alt="Tom" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
-            <ul>
-              <li>
-                <a href=""
-                  ><img src="./images/instagram.svg" alt=" инстаграмм"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/in.svg" alt="ин" /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img src="./images/Camila.png" alt="Camila" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
-            <ul>
-              <li>
-                <a href=""
-                  ><img src="./images/instagram.svg" alt=" инстаграмм"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/in.svg" alt="ин" /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img src="./images/Daniel.png" alt="Daniel" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
-            <ul>
-              <li>
-                <a href=""
-                  ><img src="./images/instagram.svg" alt=" инстаграмм"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/in.svg" alt="ин" /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Customers</h2>
-        <ul>
-          <li><img src="./images/Client 1.svg" alt="" /></li>
-          <li><img src="./images/Client 2.svg" alt="" /></li>
-          <li><img src="./images/Client 3.svg" alt="" /></li>
-          <li><img src="./images/Client 4.svg" alt="" /></li>
-          <li><img src="./images/Client 5.svg" alt="" /></li>
-          <li><img src="./images/Client 6.svg" alt="" /></li>
+      <div class="color">
+        <section class="our-team container">
+          <h2 class="hteam">Our Team</h2>
+          <ul class="hteam-position">
+            <li class="item card">
+              <img src="./images/Mark.png" alt="Mark" />
+              <h3>Mark Guerrero</h3>
+              <p>Product Designer</p>
+              <ul class="hteam-source">
+                <li class="item">
+                  <a href=""
+                    ><img
+                      class="inst"
+                      src="./images/instagram.svg"
+                      alt=" инстаграмм"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
+                </li>
+                <li class="item">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="фейсбук"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/in.svg" alt="ин" /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item card">
+              <img src="./images/Tom.png" alt="Tom" />
+              <h3>Tom Ford</h3>
+              <p>Frontend Developer</p>
+              <ul class="hteam-source">
+                <li class="item">
+                  <a href=""
+                    ><img
+                      class="inst"
+                      src="./images/instagram.svg"
+                      alt=" инстаграмм"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
+                </li>
+                <li class="item">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="фейсбук"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/in.svg" alt="ин" /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item card">
+              <img src="./images/Camila.png" alt="Camila" />
+              <h3>Camila Garcia</h3>
+              <p>Marketing</p>
+              <ul class="hteam-source">
+                <li class="item">
+                  <a href=""
+                    ><img
+                      class="inst"
+                      src="./images/instagram.svg"
+                      alt=" инстаграмм"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
+                </li>
+                <li class="item">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="фейсбук"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/in.svg" alt="ин" /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item card">
+              <img src="./images/Daniel.png" alt="Daniel" />
+              <h3>Daniel Wilson</h3>
+              <p>UI Designer</p>
+              <ul class="hteam-source">
+                <li class="item">
+                  <a href=""
+                    ><img
+                      class="inst"
+                      src="./images/instagram.svg"
+                      alt=" инстаграмм"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
+                </li>
+                <li class="item">
+                  <a href=""
+                    ><img src="./images/facebook.svg" alt="фейсбук"
+                  /></a>
+                </li>
+                <li class="item">
+                  <a href=""><img src="./images/in.svg" alt="ин" /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="container">
+        <h2 class="customers">Customers</h2>
+        <ul class="customers-img">
+          <li class="item"><img src="./images/Client 2.svg" alt="" /></li>
+          <li class="item"><img src="./images/Client 1.svg" alt="" /></li>
+          <li class="item"><img src="./images/Client 3.svg" alt="" /></li>
+          <li class="item"><img src="./images/Client 4.svg" alt="" /></li>
+          <li class="item"><img src="./images/Client 5.svg" alt="" /></li>
+          <li class="item"><img src="./images/Client 6.svg" alt="" /></li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a href="/">
-        <h2 class="footer-logo"><span class="footer-web">WEB</span> STUDIO</h2>
-      </a>
-      <p class="footer-description">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-      <p class="footer-media">Social media</p>
-      <ul>
-        <li>
-          <a href=""><img src="./images/instagram.svg" alt=" инстаграмм" /></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
-        </li>
-        <li>
-          <a href=""><img src="./images/in.svg" alt="ин" /></a>
-        </li>
-      </ul>
+      <div class="footer-position">
+        <a href="/">
+          <h2 class="footer-logo">
+            <span class="footer-web">WEB</span> STUDIO
+          </h2>
+        </a>
+        <p class="footer-media">Social media</p>
+      </div>
+      <div class="position-footer">
+        <p class="footer-description">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+
+        <ul class="footer-img">
+          <li class="item">
+            <a href=""
+              ><img src="./images/instagram.svg" alt=" инстаграмм"
+            /></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="./images/twiter.svg" alt=" твитер" /></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="./images/facebook.svg" alt="фейсбук" /></a>
+          </li>
+          <li class="item">
+            <a href=""><img src="./images/in.svg" alt="ин" /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
