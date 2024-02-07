@@ -119,8 +119,17 @@ body p {
   letter-spacing: 2%;
 }
 .section-hero {
-  background-color: var(--color-h);
+  background: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   height: 600px;
+  max-width: 1440px;
 
   margin-left: auto;
   margin-right: auto;
@@ -296,6 +305,8 @@ body p {
 .hteam-source {
   display: flex;
   text-align: center;
+
+  padding-left: 16px;
 }
 .hteam-position .item h3 {
   margin-top: 32px;
@@ -351,4 +362,41 @@ body p {
 }
 .card:nth-child(3n) {
   margin-right: 0px;
+}
+.section-description .item-icon::before {
+  display: block;
+  content: "";
+  width: 264px;
+  height: 112px;
+  background-size: contain;
+}
+.item-icon:nth-child(1)::before {
+  background-image: url(../images/Icon\ 1.svg);
+}
+.item-icon:nth-child(2):before {
+  background-image: url(../images/Icon\ 2.svg);
+}
+.item-icon:nth-child(3):before {
+  background-image: url(../images/Icon\ 3.svg);
+}
+.item-icon:nth-child(4):before {
+  background-image: url(../images/Icon\ 4.svg);
+}
+.item-icon + .item-icon {
+  margin-left: 24px;
+}
+.svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+.svg:hover {
+  fill: pink;
+}
+.item-svg {
+  width: 168px;
+  height: 88px;
+}
+.img-position + .img-position {
+  margin-left: 24px;
 }
