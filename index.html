@@ -16,6 +16,8 @@
     />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.css" />
+    
+    
   </head>
   <body>
     <header class="header">
@@ -60,37 +62,46 @@
             <img src="./images/close.svg" alt="" />
           </button>
           <p class="modal-p">Leave your contacts and we will call you back</p>
-          <form action="">
+          <form action="" autocomplete="off">
             <ul>
-              <li>
-                <label class="name" for="name">Name</label>
-                <input type="text" name="name" id="name" />
+              <li class="form-field pos-one">
+                <span class="icon">
+                  <img src="./images/person-black-18dp 1.svg" alt=""> 
+                </span>
+                <input type="text" name="name" id="name" class="inputs" placeholder=" "/>
+                <label class="form-label" for="name"> Name</label>
               </li>
-              <li>
-                <label class="Phone" for="Phone">Phone</label>
-                <input type="Phone" name="Phone" id="Phone" />
+              <li class="form-field">
+                <span class="icon"><img src="./images/phone-black-18dp 1.svg" alt=""></span>
+                <input type="Phone" name="Phone" id="Phone" class="inputs" placeholder=" "/>
+                <label class="form-label" for="Phone">Phone</label>
               </li>
-              <li>
-                <label class="email" for="email">Email</label>
-                <input type="email" name="email" id="email" />
+              <li class="form-field form-email">
+                <span class="icon" ><img src="./images/email-black-18dp 1.svg" alt=""></span>
+                <input type="email" name="email" id="email" class="inputs" placeholder=" "/>
+                <label class="form-label" for="email">Email</label>
               </li>
-              <li>
-                <label for="comment">Comment</label>
-                <textarea
+              <li class=" textarea">
+                <label class="comment" for="comment">Comment</label>
+                <textarea 
+                  class="form-textarea "
                   name="comment"
                   id="comment"
                   cols="30"
                   rows="10"
                   placeholder="Text input"
+                  
                 ></textarea>
-                <li>
-                  <label for="checkbox"> </label>
-                  <input type="checkbox" name="checkbox" id="checkbox">
-
+                <li class="relative">
+                  <p class="pp">I accept the terms and conditions of the <a  href="">Privacy Policy</a></p>
+                  <label class="label" >
+                    <input class="checkbox" type="checkbox" name="checkbox" >
+                    <span class="icon-check"></span>
+                     </label>
                 </li>
               </li>
             </ul>
-            <p>I accept the terms and conditions of the <a href="">Privacy Policy</a></p>
+            
             <button class="submit" type="submit">Send</button>
           </form>
         </div>
