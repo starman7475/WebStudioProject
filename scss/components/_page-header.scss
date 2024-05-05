@@ -1,0 +1,28 @@
+.header {
+  height: 72px;
+  align-items: center;
+}
+.nav-logo {
+  margin-top: 24px;
+  margin-left: 16px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-top: 24px;
+  margin-right: 16px;
+}
+
+.nav-position {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
