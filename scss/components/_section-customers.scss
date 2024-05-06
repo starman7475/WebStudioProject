@@ -24,3 +24,22 @@
 .section-customers__imgs-item {
   display: block;
 }
+
+@media screen and (min-width: 428px) {
+  .section-customers {
+    &__imgs {
+      width: 396px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-customers {
+    &__imgs {
+      width: 618px;
+      gap: 72px 24px;
+    }
+  }
+}

@@ -5,6 +5,11 @@
 .section-description {
   margin-top: 96px;
   margin-bottom: 96px;
+  &__item {
+    max-width: 396px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .section-description__item:not(:last-child) {
@@ -26,4 +31,18 @@
   line-height: 24px;
 
   text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+  .section-description {
+    display: flex;
+    width: 736px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 72px 24px;
+    &__item {
+      width: 356px;
+    }
+  }
 }

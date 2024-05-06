@@ -1,10 +1,8 @@
 .header {
   height: 72px;
-  align-items: center;
 }
 .nav-logo {
   margin-top: 24px;
-  margin-left: 16px;
 }
 
 .menu-button {
@@ -14,15 +12,58 @@
   border: none;
   background-color: transparent;
   margin-top: 24px;
-  margin-right: 16px;
 }
 
 .nav-position {
   display: flex;
   justify-content: space-between;
+  height: 72px;
 }
-.navigation {
-  @media screen and (max-width: 767px) {
+
+.nav {
+  display: none;
+  &__info {
     display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    margin-top: 24px;
+
+    &__list {
+      display: flex;
+    }
+    &__info {
+      display: block;
+      margin-top: 16px;
+      &--color a {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 4%;
+        text-align: start;
+        color: #434455;
+      }
+    }
+    &__number a {
+      margin-top: 12px;
+    }
+    &__link a {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: start;
+      color: #2e2f42;
+    }
+    &__link:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }

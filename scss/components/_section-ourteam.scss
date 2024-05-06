@@ -56,3 +56,19 @@
 .item-card__img {
   max-width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .section-ourteam {
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 552px;
+      gap: 64px 24px;
+      margin-right: auto;
+      margin-left: auto;
+      &-card:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 .footer {
   background-color: #2e2f42;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   &__main {
     padding-top: 96px;
@@ -21,7 +23,7 @@
     text-align: start;
 
     color: white;
-    width: 268px;
+    max-width: 268px;
     height: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +77,7 @@
   }
   &__input {
     display: block;
-    width: 100%;
+    width: 298px;
 
     height: 40px;
     margin-left: auto;
@@ -133,5 +135,42 @@
       vertical-align: middle;
       margin-left: 16px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__about {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 96px;
+    }
+    &__main {
+      padding-top: 0px;
+      margin-right: 24px;
+    }
+    &__link {
+      margin-left: 0%;
+    }
+    &__description {
+      width: 264px;
+    }
+    &__message {
+      display: flex;
+    }
+    &-form__input {
+      width: 264px;
+      margin-right: 24px;
+    }
+    &-form {
+      width: 453px;
+      text-align: start;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .media {
+    text-align: start;
   }
 }

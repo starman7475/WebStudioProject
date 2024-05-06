@@ -64,3 +64,36 @@
       url("../../images/mobile-hero@2x.jpeg ");
   }
 }
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../../images/tablet-hero.jpeg ");
+
+    &__title {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 60px;
+      width: 496px;
+      height: 120px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../../images/tablet-hero@2x.jpeg ");
+    }
+  }
+}
