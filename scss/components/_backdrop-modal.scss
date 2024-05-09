@@ -48,3 +48,12 @@
     margin-right: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    height: 584px;
+    &__btn-close {
+      margin-left: 360px;
+    }
+  }
+}

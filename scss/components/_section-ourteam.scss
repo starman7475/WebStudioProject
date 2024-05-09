@@ -28,11 +28,21 @@
 }
 
 .item-card__h {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
   margin-top: 32px;
   margin-bottom: 8px;
+  color: #2e2f42;
 }
 .item-card__p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 8px;
+  color: #434455;
 }
 .item-card__source {
   display: flex;
@@ -69,6 +79,20 @@
       &-card:not(:last-child) {
         margin-bottom: 0px;
       }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-ourteam {
+    padding-bottom: 120px;
+    &__h {
+      padding-top: 120px;
+    }
+    &__item {
+      width: 1128px;
+      padding-left: auto;
+      padding-right: auto;
+      gap: 0px 24px;
     }
   }
 }

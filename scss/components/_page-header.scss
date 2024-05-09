@@ -67,3 +67,25 @@
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  .nav {
+    margin-left: 76px;
+    margin-right: 332px;
+    &-position {
+      justify-content: start;
+    }
+    &__info {
+      display: flex;
+      margin-top: 24px;
+      &--color a {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__mail {
+      margin-right: 40px;
+    }
+  }
+}

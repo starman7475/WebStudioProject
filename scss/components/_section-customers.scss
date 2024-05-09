@@ -40,6 +40,24 @@
     &__imgs {
       width: 618px;
       gap: 72px 24px;
+      &-item {
+        width: 168px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-customers {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    &__imgs {
+      flex-wrap: nowrap;
+      width: 1128px;
+      gap: 0px 24px;
+      &-item {
+        width: 168px;
+      }
     }
   }
 }

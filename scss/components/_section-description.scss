@@ -46,3 +46,57 @@
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .section-description {
+    width: 1128px;
+    gap: 0px 24px;
+    flex-wrap: nowrap;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    &__item {
+      width: 264px;
+
+      &--h {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: start;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      &--p {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: start;
+      }
+
+      &:nth-child(1)::before {
+        background-image: url(../../images/Icon\ 1.svg);
+      }
+      &:nth-child(2)::before {
+        background-image: url(../../images/Icon\ 2.svg);
+      }
+      &:nth-child(3):before {
+        background-image: url(../../images/Icon\ 3.svg);
+      }
+      &:nth-child(4):before {
+        background-image: url(../../images/Icon\ 4.svg);
+      }
+    }
+    &__item::before {
+      display: block;
+      content: "";
+      width: 264px;
+      height: 112px;
+      background-size: contain;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}
