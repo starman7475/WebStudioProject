@@ -17,184 +17,329 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container nav-position">
-        <a href="/">
-          <h2 class="header-logo">
-            <span class="web">WEB</span> <span class="studio">STUDIO</span>
-          </h2>
-        </a>
-        <nav class="nav">
-          <ul class="nav-site">
-            <li class="item">
-              <a href="./index.html">Studio</a>
+    <div class="header--border">
+      <header class="header container">
+        <div class="nav-position">
+          <a href="/">
+            <img class="nav-logo" src="./images/Logo (1).svg" alt="" />
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__link">
+                <a href="./index.html">Studio</a>
+                <div class="nav__item--active"></div>
+              </li>
+              <li class="nav__link">
+                <a href="./potfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__link">
+                <a href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="nav__info">
+            <li class="nav__mail nav__info--color">
+              <a href="">info@devstudio.com</a>
             </li>
-            <li class="item">
-              <a href="./potfolio.html">Portfolio</a>
-              <div class="active-line"></div>
-            </li>
-            <li class="item">
-              <a href="">Contacts</a>
+            <li class="nav__number nav__info--color">
+              <a href="">+11 (000) 111-11-11</a>
             </li>
           </ul>
-        </nav>
-        <ul class="nav-links">
-          <li class="item">
-            <a href="">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a href="">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+
+          <button type="button" class="menu-button">
+            <svg width="32" height="22">
+              <use
+                class="icon-menu"
+                href="./images/charm_menu-hamburger.svg#burger"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu is-hidden">
+          <button class="mobile-menu__btn-close">
+            <img src="./images/close.svg" alt="" />
+          </button>
+          <ul class="mobile-menu__navigation">
+            <li><a class="mobile-menu__navigation-item" href="/">Studio</a></li>
+            <li>
+              <a class="mobile-menu__navigation-item" href="/potfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__navigation-item-contacts">Contacts</li>
+          </ul>
+          <ul class="mobile-menu__info">
+            <li class="mobile-menu__number">+11 (000) 111-11-11</li>
+            <li class="mobile-menu__mail">info@devstudio.com</li>
+          </ul>
+          <ul class="mobile-menu__links">
+            <li class="link__item">
+              <svg class="link__svg">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="link__item">
+              <svg class="link__svg">
+                <use href="./images/symbol-defs.svg#icon-twiter"></use>
+              </svg>
+            </li>
+            <li class="link__item">
+              <svg class="link__svg">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="link__item">
+              <svg class="link__svg">
+                <use href="./images/symbol-defs.svg#icon-in"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
     <main>
-      <h1 class="our-works">Наши работы</h1>
-      <section class="container">
-        <h2 class="filters">Фильтры</h2>
-        <ul class="works-btn">
-          <li><button type="button" class="button-primary">All</button></li>
-          <li>
-            <button type="button" class="button-primary">Web Site</button>
-          </li>
-          <li><button type="button" class="button-primary">App</button></li>
-          <li><button type="button" class="button-primary">Design</button></li>
-          <li>
-            <button type="button" class="button-primary marketing">
-              Marketing
-            </button>
-          </li>
+      <h1 class="our-works__name">Наши работы</h1>
+      <section class="container section-buttons">
+        <h2 class="section-buttons__filter">Фильтры</h2>
+        <ul class="section-buttons__works-btns">
+          <div class="section-buttons__works-btns--row-1">
+            <li>
+              <button type="button" class="section-buttons__button-primary">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="section-buttons__button-primary">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="nullmargin section-buttons__button-primary"
+              >
+                App
+              </button>
+            </li>
+          </div>
+          <div class="section-buttons__works-btns--row-2">
+            <li>
+              <button type="button" class="section-buttons__button-primary">
+                Design
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="nullmargin section-buttons__button-primary marketing"
+              >
+                Marketing
+              </button>
+            </li>
+          </div>
         </ul>
       </section>
-      <section class="container">
-        <h2 class="works">Товар</h2>
-        <ul class="flex-elements">
-          <li class="card">
-            <a href="">
-              <img src="./images/Banking.png" alt="банковское приложение" />
-              <h3>Banking App Interface Concept</h3>
-              <p>App</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="">
-              <img src="./images/cashless.png" alt="безнал оплата" />
-              <h3>Cashless Payment</h3>
-              <p>Marketing</p>
-            </a>
-          </li>
-          <li class="card third-card">
+      <section class="container section-works">
+        <h2 class="section-works__name">Товар</h2>
+        <ul class="section-works__list-of-cards">
+          <li class="section-works__card">
             <a href="">
               <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/Banking.png"
+                alt="банковское приложение"
+              />
+              <h3 class="card__name">Banking App Interface Concept</h3>
+              <p class="card__description">App</p>
+            </a>
+          </li>
+          <li class="section-works__card">
+            <a href="">
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/cashless.png"
+                alt="безнал оплата"
+              />
+              <h3 class="card__name">Cashless Payment</h3>
+              <p class="card__description">Marketing</p>
+            </a>
+          </li>
+          <li class="section-works__card">
+            <a href="">
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
                 src="./images/meditation.png"
                 alt="программа для медитации"
               />
-              <h3>Meditation App</h3>
-              <p>App</p>
+              <h3 class="card__name">Meditation App</h3>
+              <p class="card__description">App</p>
             </a>
           </li>
-          <li class="card">
+          <li class="section-works__card">
             <a href="">
-              <img src="./images/taxi.png" alt="такси" />
-              <h3>Taxi Service</h3>
-              <p>Marketing</p>
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/taxi.png"
+                alt="такси"
+              />
+              <h3 class="card__name">Taxi Service</h3>
+              <p class="card__description">Marketing</p>
             </a>
           </li>
-          <li class="card">
+          <li class="section-works__card">
             <a href="">
-              <img src="./images/screen.png" alt="изображение телефона" />
-              <h3>Screen Illustrations</h3>
-              <p>Design</p>
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/screen.png"
+                alt="изображение телефона"
+              />
+              <h3 class="card__name">Screen Illustrations</h3>
+              <p class="card__description">Design</p>
             </a>
           </li>
-          <li class="card third-card">
+          <li class="section-works__card">
             <a href="">
-              <img src="./images/online.png" alt="онлайн курсы" />
-              <h3>Online Courses</h3>
-              <p>Marketing</p>
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/online.png"
+                alt="онлайн курсы"
+              />
+              <h3 class="card__name">Online Courses</h3>
+              <p class="card__description">Marketing</p>
             </a>
           </li>
-          <li class="card">
+          <li class="section-works__card">
             <a href="">
-              <img src="./images/instagram.png" alt="инстаграмм сторис" />
-              <h3>Instagram Stories Concept</h3>
-              <p>Design</p>
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/instagram.png"
+                alt="инстаграмм сторис"
+              />
+              <h3 class="card__name">Instagram Stories Concept</h3>
+              <p class="card__description">Design</p>
             </a>
           </li>
-          <li class="card">
+          <li class="section-works__card">
             <a href="">
-              <img src="./images/organic.png" alt="еда" />
-              <h3>Organic Food</h3>
-              <p>Web Site</p>
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/organic.png"
+                alt="еда"
+              />
+              <h3 class="card__name">Organic Food</h3>
+              <p class="card__description">Web Site</p>
             </a>
           </li>
-          <li class="card third-card">
+          <li class="section-works__card">
             <a href="">
-              <img src="./images/fresh.png" alt="коффе" />
-              <h3>Fresh Coffee</h3>
-              <p>Web Site</p>
+              <img
+                class="section-works__img"
+                width="396"
+                height="280"
+                src="./images/fresh.png"
+                alt="коффе"
+              />
+              <h3 class="card__name">Fresh Coffee</h3>
+              <p class="card__description">Web Site</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-position">
-        <a href="/">
-          <h2 class="footer-logo">
-            <span class="footer-web">WEB</span> STUDIO
-          </h2>
-        </a>
-        <p class="footer-media">Social media</p>
-      </div>
-      <div class="position-footer">
-        <p class="footer-description">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+      <div class="footer__position">
+        <div class="footer__about">
+          <div class="footer__main">
+            <a href="/" class="footer__link">
+              <img
+                class="footer__img--logo"
+                src="./images/Logo (2).svg"
+                alt=""
+              />
+            </a>
+            <p class="footer__description">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
 
-        <ul class="footer-img">
-          <li class="item">
-            <svg class="svg">
-              <use
-                href="./images/symbol-defs.svg#icon-instagram"
-                width="40px"
-                ,
-                height="40px"
-              ></use>
-            </svg>
-          </li>
-          <li class="item">
-            <svg class="svg">
-              <use
-                href="./images/symbol-defs.svg#icon-twiter"
-                width="40px"
-                ,
-                height="40px"
-              ></use>
-            </svg>
-          </li>
-          <li class="item">
-            <svg class="svg">
-              <use
-                href="./images/symbol-defs.svg#icon-facebook"
-                width="40px"
-                ,
-                height="40px"
-              ></use>
-            </svg>
-          </li>
-          <li class="item">
-            <svg class="svg">
-              <use
-                href="./images/symbol-defs.svg#icon-in"
-                width="40px"
-                ,
-                height="40px"
-              ></use>
-            </svg>
-          </li>
-        </ul>
+          <div class="media">
+            <p class="media__name">Social media</p>
+            <ul class="media__list">
+              <li class="media__item">
+                <svg class="media__svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                    width="40px"
+                    height="40px"
+                  ></use>
+                </svg>
+              </li>
+              <li class="media__item">
+                <svg class="media__svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-twiter"
+                    width="40px"
+                    ,
+                    height="40px"
+                  ></use>
+                </svg>
+              </li>
+              <li class="media__item">
+                <svg class="media__svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-facebook"
+                    width="40px"
+                    ,
+                    height="40px"
+                  ></use>
+                </svg>
+              </li>
+              <li class="media__item">
+                <svg class="media__svg">
+                  <use
+                    href="./images/symbol-defs.svg#icon-in"
+                    width="40px"
+                    ,
+                    height="40px"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-form">
+          <h2 class="footer-form__name">Subscribe</h2>
+          <div class="footer__message">
+            <input
+              class="footer-form__input"
+              type="text"
+              placeholder="E-mail"
+            />
+            <a href="/" class="footer-form__btn">
+              <span class="footer-form__span">Subscribe</span>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
