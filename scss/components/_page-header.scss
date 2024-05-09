@@ -1,5 +1,8 @@
 .header {
   height: 72px;
+  &--border {
+    border-bottom: 1px solid #e7e9fc;
+  }
 }
 .nav-logo {
   margin-top: 24px;
